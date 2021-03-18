@@ -1,0 +1,22 @@
+{
+  "name": "ghratzoo/products-list-configuration",
+  "version": "1.0.0",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "ghratzoo/custom-header": "1.0.*",
+    "ghratzoo/products-list": "1.0.*"
+  },
+  "license": [
+    "Proprietary"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Ghratzoo\\ProductsListConfiguration\\": ""
+    }
+  }
+}

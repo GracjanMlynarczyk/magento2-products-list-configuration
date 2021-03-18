@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Custom_Header_Ghratzoo" sortOrder="120" translate="label">
+            <label>Custom Header Ghratzoo</label>
+        </tab>
+        <section id="ProductsListSection" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Products List</label>
+            <tab>Custom_Header_Ghratzoo</tab>
+            <resource>Ghratzoo_ProductsListConfiguration::parent</resource>
+            <group id="ProductsListGroup" showInStore="1" showInWebsite="1" showInDefault="1">
+                <label>First Group</label>
+                <field id="ShowList" showInDefault="1" showInWebsite="1" showInStore="1" translate="label"
+                       type="select" sortOrder="100">
+                    <label>Hide products list in custom header?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
