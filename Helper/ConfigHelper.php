@@ -30,10 +30,6 @@ class ConfigHelper extends AbstractHelper
      */
     public function getVisibleProductList(): bool
     {
-        if ($this->scopeConfig->getValue('ProductsListSection/ProductsListGroup/ShowList')) {
-            return false;
-        }
-
-        return true;
+        return !(bool) $this->scopeConfig->getValue('ProductsListSection/ProductsListGroup/ShowList');
     }
 }
